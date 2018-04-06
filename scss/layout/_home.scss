@@ -1,0 +1,46 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto Slab', serif;
+}
+
+.body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	&:before{
+		content: "";
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	  z-index: -1;
+		background-image: url('../images/pasta.jpg');
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		filter: blur(4px);
+	}
+	.wrapper {
+		flex: 1;
+		.page {
+			background-image: linear-gradient(-45deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 50%);
+			width: 100%;
+			min-height: 100vh;
+			@include flexCentered();
+			padding: 15px;
+		}
+	}
+}
+
+.container {
+	@include flexColumn();
+	box-sizing: content-box;
+	background-color: $colorWhite;
+	max-width: 500px;
+	width: 100%;
+	padding: 30px 0;
+	box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,191 @@
+// Section recipe
+
+.recipe {
+	padding: 0 50px;
+	margin-bottom: 15px;
+
+	.ingredients {
+		color: $colorGrey;
+		font-size: 12px;
+		font-weight: 300;
+	}
+
+	.name__recipe {
+		font-size: 32px;
+		line-height: 45px;
+	}
+}
+// Section select
+.select {
+	border: 1px solid transparent;
+	border-bottom: 1px solid $colorOrange;
+	padding: 0 50px 8px;
+
+	.select__articles {
+		display: flex;
+		list-style-type: none;
+
+		a {
+			text-decoration: none;
+			color: $colorOrange;
+			font-size: 12px;
+			cursor: pointer;
+
+			span {
+				padding: 0 8px;
+			}
+		}
+	}
+}
+// Section shopping__cart
+.articles {
+	list-style-type: none;
+	overflow: scroll;
+	height: 230px;
+
+	.article {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: 1px solid $colorLightGrey;
+
+		label {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			cursor: pointer;
+		}
+
+		.article__block1 {
+			display: flex;
+			align-items: center;
+			padding: 10px 0;
+
+			.checkbox {
+				margin: 0 20px;
+				width: 15px;
+				height: 15px;
+				position: relative;
+
+				&:before {
+					content: "";
+					position: absolute;
+					width: 13px;
+					height: 13px;
+					background-color: $colorWhite;
+					border: 1px solid $colorGrey;
+					display: block;
+				}
+
+				&:checked {
+					&:after {
+						content: "";
+						position: absolute;
+						top: 0;
+						left: 5px;
+						width: 13px;
+						height: 6px;
+						border-left: 2px solid $colorOrange;
+						border-bottom: 2px solid $colorOrange;
+						transform: rotateZ(-45deg);
+					}
+				}
+			}
+
+			.quantity {
+				display: flex;
+				width: 40px;
+				height: 40px;
+				line-height: 40px;
+				font-size: 20px;
+				color: $colorBlue;
+				text-align: center;
+				margin-right: 20px;
+			}
+		}
+
+		.article__block2 {
+			.price {
+				color: $colorGreen;
+				font-size: 20px;
+				font-family: Arial;
+				margin: 20px 50px 20px 0;
+			}
+		}
+
+		&:nth-child(even) {
+			background-color: $colorMediumGrey;
+		}
+	}
+}
+
+.group {
+	@include flexColumn();
+
+	.product {
+		font-weight: 900;
+	}
+
+	.brand {
+		font-size: 12px;
+		color: $colorGrey;
+	}
+
+	.items {
+		font-size: 12px;
+	}
+}
+
+// Section costs
+.costs {
+	@include flexColumn();
+	padding: 30px 50px 0;
+
+	.shipping-cost,
+	.subtotal,
+	.total {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 10px;
+		padding: 5px 0;
+
+		.total__text {
+			font-family: Arial;
+			font-weight: 700;
+			display: flex;
+			align-self: center;
+		}
+
+		.total__price {
+			font-size: 24px;
+			color: $colorGreen;
+			font-family: Arial;
+		}
+	}
+
+	.buy {
+		margin-top: 20px;
+		height: 50px;
+		font-size: 20px;
+		border-radius: 5px;
+		background-color: $colorGreen;
+		color: $colorWhite;
+		padding-bottom: 0;
+		cursor: pointer;
+		outline: none;
+	}
+}
+
+.items__text,
+.shipping__text,
+.subtotal__text {
+	color: $colorGrey;
+}
+
+.items__text {
+	font-size: 14px;
+}
+
+.price {
+	display: flex;
+}
