@@ -21,61 +21,14 @@
 				</section>
 				<section class="select">
 					<ul class="select__articles">
-						<li class="select-all"><a href="#">Seleccionar todo<span>|</span></a></li>
-						<li class="unselect-all"><a href="#">Deseleccionar todo</a></li>
+						<li class="select-all"><a href="javascript:seleccionar_todo()">Seleccionar todo<span>|</span></a></li>
+						<li class="unselect-all"><a href="javascript:deseleccionar_todo()">Deseleccionar todo</a></li>
 					</ul>
 				</section>
 				<section class="shopping__cart">
-					<ul class="articles">
-						<!-- <li class="article article1">
-							<label for="product1">
-								<div class="article__block1">
-									<input type="checkbox" name="product" id="product1"  class="checkbox"/>
-									<input type="number" class="quantity" name="quantity" min="0" max="10" value="1" />
-									<div class="group">
-										<span class="product">Artículo</span>
-										<span class="brand">Marca</span>
-										<span class="items">X kg.</span>
-									</div>
-								</div>
-								<div class="article__block2">
-									<span class="price">X,XX €</span>
-								</div>
-							</label>
-						</li>
-						<li class="article article2">
-							<label for="product2">
-								<div class="article__block1">
-									<input type="checkbox" name="product" id="product2"  class="checkbox"/>
-									<input type="number" class="quantity" name="quantity" min="0" max="10" value="1" />
-									<div class="group">
-										<span class="product">Artículo</span>
-										<span class="brand">Marca</span>
-										<span class="items">X kg.</span>
-									</div>
-								</div>
-								<div class="article__block2">
-									<span class="price">X,XX €</span>
-								</div>
-							</label>
-						</li>
-						<li class="article article3">
-							<label for="product3">
-								<div class="article__block1">
-									<input type="checkbox" name="product" id="product3"  class="checkbox"/>
-									<input type="number" class="quantity" name="quantity" min="0" max="10" value="1" />
-									<div class="group">
-										<span class="product">Artículo</span>
-										<span class="brand">Marca</span>
-										<span class="items">X kg.</span>
-									</div>
-								</div>
-								<div class="article__block2">
-									<span class="price">X,XX €</span>
-								</div>
-							</label>
-						</li> -->
-					</ul>
+					<form id="form" action="" name="f1">
+						<ul class="articles"></ul>
+					</form>
 				</section>
 				<section class="costs">
 					<div class="items__number">
@@ -84,11 +37,14 @@
 					</div>
 					<div class="subtotal">
 						<span class="subtotal__text">Subtotal </span>
-						<span class="subtotal__price">2,95 €</span>
+						<span class="subtotal__price">5 €</span>
 					</div>
 					<div class="shipping-cost">
 						<span class="shipping__text">Costes de envío </span>
-						<span class="shipping__price"></span>
+						<div class="shipping">
+							<span class="shipping__price"></span>
+							<span class="currency"></span>
+						</div>
 					</div>
 					<div class="total">
 						<span class="total__text">Total </span>

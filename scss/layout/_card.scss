@@ -48,7 +48,6 @@
 		align-items: center;
 		justify-content: space-between;
 		border-bottom: 1px solid $colorLightGrey;
-
 		label {
 			display: flex;
 			justify-content: space-between;
@@ -109,13 +108,23 @@
 				color: $colorGreen;
 				font-size: 20px;
 				font-family: Arial;
-				margin: 20px 50px 20px 0;
+				margin: 20px 0;
+				display: inline-block;
+
+			}
+			.currency{
+				display: inline-block;
+				color: $colorGreen;
+				font-size: 20px;
+				font-family: Arial;
+				margin: 20px 30px 20px 0;
 			}
 		}
 
 		&:nth-child(even) {
 			background-color: $colorMediumGrey;
 		}
+
 	}
 }
 

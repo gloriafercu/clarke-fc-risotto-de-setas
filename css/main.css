@@ -200,7 +200,16 @@
   color: #478e2b;
   font-size: 20px;
   font-family: Arial;
-  margin: 20px 50px 20px 0;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.articles .article .article__block2 .currency {
+  display: inline-block;
+  color: #478e2b;
+  font-size: 20px;
+  font-family: Arial;
+  margin: 20px 30px 20px 0;
 }
 
 .articles .article:nth-child(even) {
