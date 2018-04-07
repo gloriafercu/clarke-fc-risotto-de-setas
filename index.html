@@ -21,8 +21,8 @@
 				</section>
 				<section class="select">
 					<ul class="select__articles">
-						<li class="select-all"><a href="javascript:seleccionar_todo()">Seleccionar todo<span>|</span></a></li>
-						<li class="unselect-all"><a href="javascript:deseleccionar_todo()">Deseleccionar todo</a></li>
+						<li class="select__all"><a href="#">Seleccionar todo<span>|</span></a></li>
+						<li class="unselect__all"><a href="#">Deseleccionar todo</a></li>
 					</ul>
 				</section>
 				<section class="shopping__cart">
@@ -31,13 +31,17 @@
 					</form>
 				</section>
 				<section class="costs">
-					<div class="items__number">
+					<div class="items">
 						<span class="items__text">Items: </span>
-						<span class="items__number">1</span>
+						<span class="items__number">0</span>
 					</div>
 					<div class="subtotal">
 						<span class="subtotal__text">Subtotal </span>
-						<span class="subtotal__price">5 €</span>
+
+						<div class="subTotal__info">
+							<span class="subtotal__price">0.00</span>
+							<span class="subtotal__currency">€</span>
+						</div>
 					</div>
 					<div class="shipping-cost">
 						<span class="shipping__text">Costes de envío </span>
@@ -48,9 +52,12 @@
 					</div>
 					<div class="total">
 						<span class="total__text">Total </span>
-						<span class="total__price">9,95 €</span>
+						<div class="total__resume">
+							<span class="total__price">0.00</span>
+							<span class="currency"> €</span>
+						</div>
 					</div>
-					<button class="buy">Comprar ingredientes: 9,95 €</button>
+					<button class="buy">Comprar ingredientes: <span class="total__button">0.00</span> €</button>
 				</section>
 			</div>
 		</div>

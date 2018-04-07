@@ -271,7 +271,7 @@
   align-self: center;
 }
 
-.costs .shipping-cost .total__price,.costs .subtotal .total__price,.costs .total .total__price {
+.costs .shipping-cost .total__resume,.costs .subtotal .total__resume,.costs .total .total__resume {
   font-size: 24px;
   color: #478e2b;
   font-family: Arial;
