@@ -115,8 +115,8 @@
 
 .articles {
   list-style-type: none;
-  overflow: scroll;
-  height: 230px;
+  overflow-y: scroll;
+  height: 220px;
 }
 
 .articles .article {

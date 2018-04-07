@@ -40,8 +40,8 @@
 // Section shopping__cart
 .articles {
 	list-style-type: none;
-	overflow: scroll;
-	height: 230px;
+	overflow-y: scroll;
+	height: 220px;
 
 	.article {
 		display: flex;
