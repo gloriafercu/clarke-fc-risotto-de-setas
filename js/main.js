@@ -62,7 +62,7 @@ function getItemsRecipe() {
 							'</div>' +
 						'</div>' +
 						'<div class="article__block2">' +
-							'<span class="price">' + parseFloat(ingredients[i].price).toPrecision(3) + '</span> ' +
+							'<span class="price">' + parseFloat(ingredients[i].price).toFixed(2) + '</span> ' +
 							'<span class="currency">' + recipe.currency + '</span>' +
 						'</div>' +
 				'</li>';
@@ -71,7 +71,7 @@ function getItemsRecipe() {
 
 			// Como mostrar los gastos de envío
 			var shippingCost = recipe["shipping-cost"];
-			shippingPriceValue = parseFloat(shippingCost).toPrecision(3);
+			shippingPriceValue = parseFloat(shippingCost).toFixed(2);
 			shippingPrice.innerHTML = shippingPriceValue;
 			currency.innerHTML = recipe.currency;
 
